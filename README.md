@@ -63,12 +63,40 @@ The project demonstrates how pretrained visual features and fine-tuning can impr
 
 ---
 
+### ⚡ 3. Energy-Demand Forecasting with LSTM + Attention
+
+**Notebook:** `day22_capstone.ipynb`
+
+A Deep Learning time-series forecasting project that predicts the **next 24 hours of energy demand using the previous 168 hours**.
+
+#### Key Work
+
+- Synthetic hourly energy-demand generation
+- Daily and weekly seasonal patterns
+- Sliding-window sequence creation
+- 168-hour lookback window
+- 24-hour forecasting horizon
+- Chronological train/validation/test splitting
+- Train-only normalization
+- Seasonal-naive forecasting baseline
+- LSTM forecasting
+- LSTM with Attention
+- Early stopping
+- MAE, RMSE, and MAPE evaluation
+- Forecast visualization
+- Teacher forcing vs autoregressive forecasting analysis
+
+The project compares a strong seasonal baseline with LSTM and LSTM-with-attention approaches to understand whether more advanced sequence models provide a meaningful forecasting improvement.
+
+---
+
 ## 📌 Project Overview
 
 | Project | Problem Type | Main Models / Techniques |
 |---|---|---|
 | Customer Churn Prediction | Classification | Logistic Regression, Random Forest, SVM, Gradient Boosting |
 | CIFAR-10 Image Classification | Computer Vision | CNN, MobileNetV2, Transfer Learning, Grad-CAM |
+| Energy-Demand Forecasting | Time-Series Forecasting | Seasonal Baseline, LSTM, Attention |
 
 ---
 
@@ -99,6 +127,9 @@ The projects collectively demonstrate practical knowledge of:
 - Deep Learning
 - Convolutional Neural Networks
 - Transfer Learning
+- LSTM Networks
+- Attention Mechanisms
+- Time-Series Forecasting
 - Data Augmentation
 - Model Interpretability
 - Grad-CAM
@@ -116,6 +147,7 @@ Capstone-Projects/
 │
 ├── day16_capstone (1).ipynb
 ├── day20_capstone.ipynb
+├── day22_capstone.ipynb
 └── README.md
 ```
 
@@ -185,7 +217,10 @@ Through these capstone projects, I gained hands-on experience in:
 - Building CNN architectures
 - Applying transfer learning with pretrained networks
 - Understanding and visualizing model decisions with Grad-CAM
-- Comparing advanced models against baseline models
+- Preparing sequential data for time-series forecasting
+- Building LSTM models
+- Applying attention to sequence models
+- Comparing advanced models against simple baselines
 - Translating model results into practical conclusions
 
 ---
